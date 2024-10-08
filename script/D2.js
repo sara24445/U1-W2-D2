@@ -2,43 +2,46 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n3 = 4
-let n4 = 9
+let n1 = 4
+let n2 = 9
 
-let biggest
-if (n4 > n3) {
-  biggest = n4
-} else if (n3 > n4) {
-  biggest = n3
+let bigger
+if (n1 > n2) {
+  console.log(n1 + 'è più grande di' + n2)
+  console.log('il più grande è' + n1)
+} else {
+  console.log(n2 + 'è più grande di' + n1)
+  console.log('il più grande è' + n2)
 }
-
-console.log(biggest)
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 *
 /* SCRIVI QUI LA TUA RISPOSTA */
-let x = 6
-let operetion = x !== 5 ? 'not equal' : 'equal'
-console.log('il numero x è diverso da 5?', operetion)
+let num = 6
+
+if (num !== 5) {
+  console.log('not equal')
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n1 = 40
-let operatore2 = n1 % 5 === 0 ? 'divisibile per 5' : 'non divisibile per 5'
-console.log('Verifica', operatore2)
+let num2 = 35
+if (num2 % 5 === 0) {
+  console.log('divisibile per 5')
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-n1 = 16
-let n2 = 8
-console.log('valore di n2', n2)
-let sub = n1 - n2
-console.log('sottrazione', sub)
+let x1 = 80
+let x2 = 8
+if (x1 === 8 || x2 === 8 || x1 + x2 === 8 || x1 - x2 === 8 || x2 - x1 === 8) {
+  console.log('verificato')
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -46,14 +49,28 @@ console.log('sottrazione', sub)
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-const totalShoppingCart = total > 50
+let totalShoppingCart = 28
+const shippingCost = 10
+let totalToPay
+if (totalShoppingCart >= 50) {
+  totalToPay = totalShoppingCart
+} else {
+  totalToPay = totalShoppingCart + shippingCost
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart2 = 28
+const shippingCost2 = 10
+let totalToPay2
+if (totalShoppingCart2 * 0.8 >= 50) {
+  totalToPay2 = totalShoppingCart2 * 0.8
+} else {
+  totalToPay2 = totalShoppingCart2 * 0.8 + shippingCost2
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -61,23 +78,30 @@ const totalShoppingCart = total > 50
   Alla fine mostra il risultato in console.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-let a = 5
-let b = 6
-let c = 7
-let ordine
-if (c > b > a) {
-  c > b > a
+let a1 = 5
+let a2 = 6
+let a3 = 7
+
+if (a1 > a2) {
+  if (a1 > a3) {
+    if (a2 > a3) {
+    } else {
+    }
+  } else {
+  }
+} else {
 }
-console.log(ordine)
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+let numberOrNot='ciao'
+if(typeof numberOrNot==='number')
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
