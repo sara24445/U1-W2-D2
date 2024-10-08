@@ -2,7 +2,18 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-let greatNumber = 3 > 5
+let n3 = 4
+let n4 = 9
+
+let biggest
+if (n4 > n3) {
+  biggest = n4
+} else if (n3 > n4) {
+  biggest = n3
+}
+
+console.log(biggest)
+
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 *
@@ -49,13 +60,18 @@ const totalShoppingCart = total > 50
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let a = 5
+let b = 6
+let c = 7
+let ordine
+if (c > b > a) {
+  c > b > a
+}
+console.log(ordine)
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
